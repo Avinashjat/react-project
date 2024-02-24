@@ -9,6 +9,9 @@ let [counter , setCounter] = useState(0)
 
 let addvalue = ()=>{
   setCounter(counter+1)
+  setCounter(counter+1)
+  setCounter(counter+1)
+  setCounter(counter+1)
 }
 
 
