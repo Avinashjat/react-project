@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState,memo } from 'react'
 import './App.css'
+import New from './New'
 
 function App() {
  
@@ -8,9 +9,6 @@ let [counter , setCounter] = useState(0)
  
 
 let addvalue = ()=>{
-  setCounter(counter+1)
-  setCounter(counter+1)
-  setCounter(counter+1)
   setCounter(counter+1)
 }
 
@@ -27,9 +25,12 @@ let removevalue = ()=>{
 
   return (
     <>
+
+
+
+    <New />
       
 <h1> counter value {counter}</h1>
-
 <button onClick={addvalue}> Add value   </button>
 
 <br /> 
@@ -40,4 +41,4 @@ let removevalue = ()=>{
   )
 }
 
-export default App
+export default memo(App)
